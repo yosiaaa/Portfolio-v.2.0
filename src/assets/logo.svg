@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <style>
+    .bg { fill: none; }
+    .text {
+      fill: #ffffff;
+      font-family: 'Montserrat', 'Arial', sans-serif;
+      font-size: 31px;
+      font-weight: 700;
+      letter-spacing: 12.5px;
+    }
+    .star { fill: #e0e0e0; }
+  </style>
+
+  <!-- Background -->
+  <rect class="bg" width="80" height="80" />
+
+  <!-- Path Lingkaran Teks -->
+  <defs>
+    <path id="circlePath" d="M 200, 200 m -118, 0 a 118,118 0 1,1 236,0 a 118,118 0 1,1 -236,0" />
+  </defs>
+
+  <!-- Teks Melingkar -->
+  <text class="text">
+    <textPath href="#circlePath" startOffset="0%">
+      YOSIA KEHAT DRIESA - FRONTEND DEVELOPER -
+    </textPath>
+  </text>
+
+  <!-- Ikon Bintang 4 Sudut di Tengah -->
+  <path class="star" d="M 200,162 Q 200,200 162,200 Q 200,200 200,238 Q 200,200 238,200 Q 200,200 200,162 Z" />
+</svg>

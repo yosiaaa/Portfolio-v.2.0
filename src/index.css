@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-inter: "Inter", sans-serif;
+  --font-instrument: "Instrument Serif", serif;
+  --color-background: #0a0a0a;
+  --color-background-drawer: #fefaee;
+  --color-primary: #fffefc;
+
+  @keyframes marquee-infinite {
+    0% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+  --animate-marquee-infinite: marquee-infinite 15s linear infinite;
+}
+
+body {
+  background: var(--color-background);
+}
