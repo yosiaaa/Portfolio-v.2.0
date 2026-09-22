@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 interface SliderProps {
   id: number;
   title: string;
