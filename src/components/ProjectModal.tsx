@@ -37,7 +37,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
             </DrawerClose>
 
             <DrawerHeader>
-              <DrawerTitle className="text-5xl lg:text-8xl text-primary font-inter font-bold">
+              <DrawerTitle className="text-3xl lg:text-8xl text-primary font-inter font-bold">
                 {project.projectName}
               </DrawerTitle>
             </DrawerHeader>
@@ -55,7 +55,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
                     <ArrowUpRight size={16} />
                   </a>
                 )}
-                <span className="text-primary text-sm font-inter font-medium max-w-4xl w-full">
+                <span className="text-primary text-xs sm:text-sm font-inter font-medium max-w-4xl w-full">
                   {project.description}
                 </span>
                 <div className="flex items-center w-full">
