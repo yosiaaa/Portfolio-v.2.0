@@ -4,7 +4,6 @@ import logo from "@/assets/logo.svg";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { Button } from "./ui/button";
-import ButtonGroup from "./ButtonGroup";
 import { NAV_ITEMS, SOCIAL_MEDIA } from "@/data/navigation";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import { useNavScroll } from "@/hooks/useNavScroll";
@@ -65,14 +64,31 @@ export default function Navbar() {
           ))}
         </ul>
 
-        <div className="pt-10 text-sm flex flex-col lg:flex-row gap-7 lg:justify-between">
-          <div className="max-w-sm w-full">
-            <p className="text-wrap text-sm font-inter text-primary">
-              Interested in working together? ping me for cool collaborations
-              and frontend magic i’d love to hear about what you’re looking for.
-            </p>
+        <div className="pt-10 text-sm flex gap-7 justify-between items-start">
+          <div className="flex flex-col gap-8">
+            <div className="max-w-sm w-full">
+              <p className="text-wrap text-sm font-inter text-primary">
+                Interested in working together? ping me for cool collaborations
+                and frontend magic i&apos;d love to hear about what you&apos;re
+                looking for.
+              </p>
+            </div>
+            <div className="flex gap-5">
+              {SOCIAL_MEDIA.map(({ id, title, href, icon: Icon }) => (
+                <a
+                  key={id}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={title}
+                  className="flex items-center justify-center rounded-full"
+                >
+                  <Icon className="size-6 text-primary" />
+                </a>
+              ))}
+            </div>
           </div>
-          <div className="flex gap-2 justify-between items-center">
+          <div className="flex items-center">
             <Button
               href="/docs/cv.pdf"
               target="_blank"
@@ -81,8 +97,6 @@ export default function Navbar() {
             >
               CV / Resume
             </Button>
-
-            <ButtonGroup items={SOCIAL_MEDIA} />
           </div>
         </div>
       </div>

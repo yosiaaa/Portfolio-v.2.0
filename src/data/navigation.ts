@@ -1,3 +1,5 @@
+import { FaGithub, FaLinkedinIn, FaInstagram } from "react-icons/fa";
+
 export const NAV_ITEMS = [
   {
     id: 1,
@@ -22,9 +24,24 @@ export const NAV_ITEMS = [
 ] as const;
 
 export const SOCIAL_MEDIA = [
-  { id: 1, title: "Github", href: "https://github.com/yosiaaa" },
-  { id: 2, title: "Linkedin", href: "https://www.linkedin.com/in/yosiakd/" },
-  { id: 3, title: "Instagram", href: "https://www.instagram.com/driesa.yk" },
+  {
+    id: 1,
+    title: "Github",
+    href: "https://github.com/yosiaaa",
+    icon: FaGithub,
+  },
+  {
+    id: 2,
+    title: "Linkedin",
+    href: "https://www.linkedin.com/in/yosiakd/",
+    icon: FaLinkedinIn,
+  },
+  {
+    id: 3,
+    title: "Instagram",
+    href: "https://www.instagram.com/driesa.yk",
+    icon: FaInstagram,
+  },
 ] as const;
 
 export const HERO_BIO = [

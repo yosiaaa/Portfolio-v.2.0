@@ -24,7 +24,7 @@ export default function About() {
           </div>
           <div className="max-w-xl w-full flex flex-col gap-5">
             <p className="text-base text-primary font-medium font-inter">
-              I&apos;m Yosia Kehat Driesa. a Frontend Developer based in
+              Hi! I&apos;m Yosia Kehat Driesa. a Frontend Developer based in
               Jakarta. with 3+ years of experience building responsive,
               user-focused web experiences. I turn ideas into clean, scalable,
               and intuitive interfaces.
