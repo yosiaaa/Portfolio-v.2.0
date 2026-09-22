@@ -42,7 +42,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
               </DrawerTitle>
             </DrawerHeader>
 
-            <div className="flex items-center max-h-[60vh] mt-10">
+            <div className="mt-10 w-full">
               <div className="flex flex-col gap-7 lg:gap-10 w-full">
                 {project.href && (
                   <a
